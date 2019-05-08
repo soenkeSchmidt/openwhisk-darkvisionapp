@@ -243,6 +243,7 @@ function analyzeImage(args, fileName, analyzeCallback) {
           method: 'POST',
           url: 'https://gateway.watsonplatform.net/visual-recognition/api/v3/classify' + // eslint-disable-line
             '?api_key=' + args.watsonApiKey +
+          	'&classifier_ids=Fitness_1044513486' +
             '&version=2018-03-19',
           auth: {
             user: 'apikey',
